@@ -1,0 +1,113 @@
+
+// --------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------
+
+p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  margin: 0 0 var(--line-height-base);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  margin: 0 0 rem(12);
+}
+
+h1, .h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-sm);
+  letter-spacing: -0.025em;
+}
+
+h2, .h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-sm);
+  letter-spacing: -0.015em;
+  margin-bottom: var(--space-md);
+}
+
+h3, .h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-sm);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+h4, .h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-sm);
+  line-height: 1.3;
+}
+
+h5, .h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-sm);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: var(--space-md);
+}
+
+h6, .h6 {
+  font-size: var(--font-size-h6);
+  line-height: var(--line-height-sm);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: var(--space-md);
+}
+
+ul,
+ol {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+li {
+  margin-bottom: rem(6);
+}
+
+blockquote {
+  padding: 15px 0 15px var(--grid-gutter);
+  margin: 27px 0;
+  border-left: solid 66px #dddddd;
+  position: relative;
+
+  *:last-child {
+    margin: 0;
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: rem(36);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  border-collapse: collapse;
+}
+
+thead {
+  color: #666666;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: var(--space-sm) 0;
+  border-bottom: solid 1px rgba(#fff, .15);
+  color: #828282;
+}
+

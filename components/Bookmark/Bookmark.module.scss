@@ -1,0 +1,27 @@
+.bookmark {
+  border: solid 1px lightgrey;
+  padding: 1rem;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.4rem;
+  transition: border-color .2s ease, background-color .2s ease;
+
+  &:hover {
+    background-color: lighten(lightgrey, 10%);
+    border-color: transparent;
+  }
+
+  &:focus {
+    outline: solid 1px grey;
+  }
+}
+
+.title {
+  font-size: var(--font-size-h4);
+  color: darkblue;
+
+  &:hover {
+    //text-decoration: underline;
+    color: black;
+  }
+}
