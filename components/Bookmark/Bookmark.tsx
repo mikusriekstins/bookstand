@@ -1,7 +1,7 @@
 import styles from './Bookmark.module.scss'
 
-import Tag from '../Tag/Tag'
-import {useMemo} from 'react'
+import Tag from '../Tag'
+import { useMemo } from 'react'
 
 export type BookmarkType = {
   href: string
@@ -28,7 +28,7 @@ const Bookmark = ({ data }: BookmarkProps) => {
 
   return (
     <div className={ styles.bookmark }>
-      <a className={ styles.title } href={ data.href } target="_blank">
+      <a className={ styles.title } href={ data.href } target="_blank" rel="noreferrer">
         { data.description }
       </a>
       <div className={ styles.tags }>

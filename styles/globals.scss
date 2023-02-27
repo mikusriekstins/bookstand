@@ -14,6 +14,7 @@
   --font-size-h2: 52px;
   --font-size-h1: 72px;
 
+  // Line heights
   --line-height-base: 1.4;
   --line-height-md: 1.2;
   --line-height-sm: 1.0;
@@ -28,13 +29,16 @@
   // Layout
   --max-width: 1100px;
   --grid-gutter: 32px;
+  --side-padding: 64px;
 
+  // Breakpoints
   --br-xl: 1600px;
   --br-lg: 1440px;
   --br-md: 1024px;
   --br-sm: 768px;
   --br-xs: 375px;
 
+  // Spaces
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
@@ -70,6 +74,7 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: var(--side-padding);
 }
 
 @media (prefers-color-scheme: dark) {
