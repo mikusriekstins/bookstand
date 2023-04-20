@@ -1,8 +1,8 @@
 .grid {
   display: flex;
-  flex-flow: row wrap;
-  max-width: 100%;
-  gap: var(--grid-gutter);
+  //flex-flow: row wrap;
+  //max-width: 100%;
+  margin: 0 calc(var(--grid-gutter)/-2);
 
   &--expanded {
     width: 100%;
@@ -39,10 +39,26 @@
 
 .col {
   flex: 1 1 0px;
+  padding: 0 calc(var(--grid-gutter)/2);
+
+  &--xl-3 {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
 
   &--xl-4 {
     max-width: 33.333%;
     flex: 0 0 33.333%;
+  }
+
+  &--xl-8 {
+    max-width: 66.666%;
+    flex: 0 0 66.666%;
+  }
+
+  &--xl-9 {
+    max-width: 75%;
+    flex: 0 0 75%;
   }
 }
 

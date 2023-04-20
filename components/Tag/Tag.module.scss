@@ -1,11 +1,28 @@
 
-.tag {
+.inlineTag {
   display: inline-block;
   padding: 0.2rem 0.4rem;
   background-color: lighten(lightgrey, 10%);
   border-radius: var(--border-radius);
   margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
   color: darkblue;
+  transition: color .2s ease, background-color .2s ease;
+
+  &:hover {
+    color: white;
+    background-color: darkblue;
+  }
+
+}
+
+.blockTag {
+  display: block;
+  background-color: transparent;
+  padding: 0.4rem;
+  border-radius: 0;
+  margin: 0;
+  border-top: solid 1px lightgray;
   transition: color .2s ease, background-color .2s ease;
 
   &:hover {
